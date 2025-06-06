@@ -1,0 +1,67 @@
+body {
+  background: #f8f6ef;
+}
+.order-container {
+  max-width: 420px;
+  margin: 90px auto 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+  font-family: 'Quicksand', sans-serif;
+}
+.order-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: 'Pacifico', cursive;
+  color: #7c4a1a;
+  font-size: 2rem;
+}
+.order-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #222;
+}
+.order-form select, .order-form input[type="number"], .order-form input[type="text"], .order-form input[type="email"] {
+  width: 100%;
+  padding: 10px 8px;
+  margin-bottom: 16px;
+  border: 1.5px solid #7c4a1a;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #f8f6ef;
+}
+.order-form button {
+  width: 100%;
+  padding: 10px 0;
+  background: #7c4a1a;
+  color: #fffbe9;
+  border: none;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.order-form button:hover {
+  background: #d6ff00;
+  color: #222;
+}
+.order-summary {
+  background: #f8f6ef;
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 18px;
+  font-size: 1.1rem;
+  color: #222;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.order-success {
+  color: #2d7a2d;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 18px;
+}

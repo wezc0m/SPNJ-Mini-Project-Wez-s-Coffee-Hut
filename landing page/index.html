@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wez's Coffee Hut</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+ 
+  
+</head>
+<body>
+  <div class="container hero-section">
+    <!-- Hamburger button for mobile -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation" aria-controls="mainNav" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="mainNav">
+      <ul>
+        <li><button class="nav-btn" onclick="location.href='#about'">About Us</button></li>
+        <li><button class="nav-btn" onclick="location.href='#locations'">Location</button></li>
+        <li><button class="nav-btn" onclick="location.href='#Menu'">Top Picks</button></li>
+        <li><button class="nav-btn" onclick="location.href='../Order Page/order.html'">Order!</button></li>
+        <li><button class="nav-btn" onclick="location.href='#join'">Join Us!</button></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Wez’s Coffee Hut</h1>
+      <p>Where coffee nerds and common folks gather round</p>
+    </div>
+  </div>
+  
+<!-- Section: About Us -->
+  <section class="about-section" id="about">
+    <div class="about-wrapper">
+      <img src="../assets/Cafe scene.png" alt="Cafe" class="about-img">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          At Wez's Coffee Hut, we believe great coffee brings people together. From passionate coffee nerds to casual sippers, our cozy space is a place for everyone to enjoy a perfect cup. We carefully craft each drink using quality beans and fresh ingredients to give you a memorable experience every time. Whether you're here for a quick espresso, a long chat with friends, or a quiet moment to yourself, Wez's Coffee Hut is your home away from home.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Locations -->
+  <section class="locations-section" id="locations">
+    <div class="locations-header">
+      <h2>Our Locations</h2>
+      <p>Find our Huts across indonesia!</p>
+    </div>
+    <div class="locations-grid">
+      <div class="location-card">
+        <img src="../assets/cabang tangerang.png" alt="Tangerang" class="location-img">
+        <div class="location-info">
+          <h3>Tangerang</h3>
+          <p>Jl. Boulevard Gading<br>Serpong No. 12, Tangerang</p>
+        </div>
+      </div>
+      <div class="location-card">
+        <img src="../assets/cabang jakarta.png" alt="South Jakarta" class="location-img">
+        <div class="location-info">
+          <h3>South Jakarta</h3>
+          <p>Jl. Kemang Raya No. 15,<br> Kemang, Jakarta Selatan</p>
+        </div>
+      </div>
+      <div class="location-card">
+        <img src="../assets/cabang bogor.png" alt="Bogor" class="location-img">
+        <div class="location-info">
+          <h3>Bogor</h3>
+          <p>Jl. Ahmad Yani No. 22,<br> Tanah Sareal, Bogor</p>
+        </div>
+      </div>
+      <div class="location-card">
+        <img src="../assets/cabang medan.png" alt="Medan" class="location-img">
+        <div class="location-info">
+          <h3>Medan</h3>
+          <p>Unit D25, 3rd Floor, Sun Plaza Medan,<br>Jl. KH. Zainul Arifin No. 7, Lantai 3, Medan Petisah, Medan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  <!-- Section: Menu -->
+  <section class="menu-section" id="Menu">
+    <div class="menu-header">
+      <h2>Our Finest Brews!</h2>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="../assets/cappucino.png" alt="Cappucino" class="menu-img">
+        <div class="menu-title">Cappucino</div>
+        <div class="menu-desc">
+          Expresso with rich creamy milk foam.
+          A perfect balance of coffee and milk with artistic elements
+          <br><span class="menu-note">(Custom art available)</span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="../assets/caramel dolce latte.png" alt="Cafe Latte" class="menu-img">
+        <div class="menu-title">Caramel Dolce Latte</div>
+        <div class="menu-desc">
+            A smooth espresso drink with creamy steamed milk and sweet caramel flavor.
+          <br><span class="menu-note">(Custom milk-coffee ratio available)</span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="../assets/americano" alt="Americano" class="menu-img">
+        <div class="menu-title">Americano</div>
+        <div class="menu-desc">
+          A simple and strong brew with a bod and robust flavour. Perfect for catching up deadlines.
+          <br><span class="menu-note">(Custom sugar level available)</span>
+        </div>
+      </div>
+    </div>
+    <div class="custom-disclaimer">
+      <em>Disclaimer: All custom properties (art, milk-coffee ratio, sugar level, etc.) are only available through offline purchases.</em>
+    </div>
+  </section>
+  
+
+  <!-- Section: Join -->
+  <section class="join-section" id="join">
+    <div class="join-container">
+      <h2>Join Us!</h2>
+      <form id="joinForm" class="join-form">
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address here" required>
+        <div class="join-desc">We will send the membership form in 1x24 Hours</div>
+        <button type="submit">Send</button>
+        <div id="joinMessage" class="join-message"></div>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-row">
+          <div class="footer-title">More Interesting Stuffs !</div>
+          <div class="footer-icons">
+            <a href="https://www.instagram.com/muh.anip/" aria-label="Instagram"><img src="../assets/instagram.svg" alt="Instagram" /></a>
+            <a href="https://x.com/Fawwazzzeh" aria-label="Twitter"><img src="../assets/twitter.svg" alt="Twitter" /></a>
+            <a href="https://www.linkedin.com/in/hanif-fawwaz-242734313/" aria-label="Linkedin"><img src="../assets/linkedin.svg" alt="Linkedin" /></a>
+          </div>
+        </div>
+        <div class="footer-credits"> &copy; Wez's Publishings 2025</div>
+      </div>
+    </footer>
+  </section>
+   
+  <script src="script.js"></script>
+</body>
+</html>
